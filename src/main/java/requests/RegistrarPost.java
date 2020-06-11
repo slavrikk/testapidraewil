@@ -87,8 +87,4 @@ public class RegistrarPost {
         return responseNumber;
     }
 
-    public static void main(String[] args) {
-        RegistrarPost registrarPost = new RegistrarPost("Slava", "Shapkin", "exampleee3wmail@gmail.ru", "qwerty", "123456789");
-        System.out.println(registrarPost.postRegisterUser().toString());
-    }
 }
