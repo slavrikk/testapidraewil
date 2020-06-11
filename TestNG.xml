@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testingmaterial" parallel="methods">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="testngTest">
+        <parameter name = "firstName" value="Slava"/>
+        <parameter name = "lastName" value="Shapkin"/>
+        <parameter name = "email" value="exampleemail@gmail.com"/>
+        <parameter name = "password" value="qwerty"/>
+        <parameter name = "phoneNumber" value="911111111"/>
+
+        <parameter name = "changingFirstName" value="Vyacheslav"/>
+        <parameter name = "changingLastName" value="Shapkin23"/>
+
+        <classes>
+            <class name="testclasses.TestScenario" />
+        </classes>
+    </test>
+</suite>
